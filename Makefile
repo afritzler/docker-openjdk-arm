@@ -8,7 +8,7 @@ java:
 	docker build -t afritzler/openjdk-arm .
 	docker tag afritzler/openjdk-arm afritzler/openjdk-arm:$(TAG)
 
-push-java: spark
+push-java: java
 	docker push afritzler/openjdk-arm
 	docker push afritzler/openjdk-arm:$(TAG)
 
